@@ -40,7 +40,7 @@ jobs:
         run: npm install -g surge
         
       - name: deploying on surge
-        run: surge ./ ahsanBootcampSampleOne.surge.sh --token ${{secrets.surge_token}}
+        run: surge ./build naive-squirrel.surge.sh --token ${{secrets.surge_token}}
 
 
           echo Add other actions to build,
